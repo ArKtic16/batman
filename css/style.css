@@ -102,16 +102,18 @@ h1, h2, h3, p {
     width: 24px;
     height: 24px;
     display: block;
+    color: white;
+    transition: color 0.3s ease-in-out;
 }
 
-.social__link_fb {
-    background-image: url('../img/facebook.svg');
+.social__link_fb:hover {
+    color: red;
 }
-.social__link_twitter {
-    background-image: url('../img/twitter.svg');
+.social__link_twitter:hover {
+    color: red;
 }
-.social__link_instagram {
-    background-image: url('../img/instagram.svg');
+.social__link_instagram:hover {
+    color: red;
 }
 
 .mute {
@@ -199,7 +201,7 @@ h1, h2, h3, p {
 
 @keyframes zoomIn {
     from {
-        transform: scale3d(0, 0, 0);
+        transform: scale3d(0, 0, 0 );
     }
 }
 
@@ -237,6 +239,7 @@ h1, h2, h3, p {
 
 @media (max-width: 768px) {
     .header {
+        min-height: 50px;
         display: flex;
         align-items: center;
         padding-left: 20px;
